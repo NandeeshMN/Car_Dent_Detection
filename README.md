@@ -1,83 +1,130 @@
-Vehicle Dent Detection using Deep Learning
-This project detects dents on vehicle surfaces using Deep Learning and Computer Vision.
-A Convolutional Neural Network built with TensorFlow and MobileNetV2 Transfer Learning is trained to classify vehicle images as dented or non-dented.
+# 🚗 Vehicle Dent Detection using Deep Learning
 
-🚀 Features
-Automated dent detection from vehicle images
-Transfer learning using MobileNetV2
-Image preprocessing using OpenCV
-Model evaluation and prediction tools
-Training performance visualization (accuracy & loss graphs)
-Simple GUI for testing dent detection
-🛠️ Tech Stack
-Python
-TensorFlow / Keras
-OpenCV
-NumPy
-Matplotlib
-📂 Project Structure
+This project detects **dents on vehicle surfaces** using **Deep Learning and Computer Vision**.
+
+A **Convolutional Neural Network (CNN)** built with **TensorFlow and MobileNetV2 Transfer Learning** is trained to classify vehicle images as **dented** or **non-dented**.
+
+---
+
+## 🚀 Features
+
+- Automated dent detection from vehicle images  
+- Transfer learning using **MobileNetV2**  
+- Image preprocessing using **OpenCV**  
+- Model evaluation and prediction tools  
+- Training performance visualization (**accuracy & loss graphs**)  
+- Simple **GUI application** for testing dent detection  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **TensorFlow / Keras**
+- **OpenCV**
+- **NumPy**
+- **Matplotlib**
+
+---
+
+## 📂 Project Structure
+
+
 ML_PROJECT
 │
 ├── dataset/
-│   ├── train/
-│   └── test/
+│ ├── train/
+│ └── test/
 │
 ├── models/
-│   ├── class_mapping.json
-│   ├── dent_model_*.keras
-│   └── training_history.pkl
+│ ├── class_mapping.json
+│ ├── dent_model_*.keras
+│ └── training_history.pkl
 │
-├── tf_env/ (virtual environment)
+├── tf_env/ # Virtual environment
 │
-├── train_model.py
-├── evaluate_model.py
-├── show_training_graphs.py
-├── dent_gui.py
+├── train_model.py # Model training script
+├── evaluate_model.py # Model evaluation
+├── show_training_graphs.py # Visualization of training metrics
+├── dent_gui.py # GUI application for prediction
 └── .gitignore
-⚙️ Installation
-Clone the repository:
 
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
 git clone https://github.com/yourusername/vehicle-dent-detection.git
 cd vehicle-dent-detection
-Install required dependencies:
-
+### Install Dependencies
 pip install tensorflow opencv-python numpy matplotlib
-🧠 Model Training
-Run the training script:
+
+### 🧠 Model Training
+
+### Run the training script:
 
 python train_model.py
-This will:
 
-Train the CNN model
-Save the trained model in the models/ folder
-Save training history for visualization
-📊 Model Evaluation
-To evaluate the trained model:
+### This process will:
+
+- Train the CNN model
+- Save the trained model inside the models/ folder
+- Store the training history for visualization
+
+### 📊 Model Evaluation
+
+### To evaluate the trained model:
 
 python evaluate_model.py
-📈 Visualize Training Graphs
-To display training performance graphs:
+
+This script evaluates the model performance on the test dataset.
+
+### 📈 Visualize Training Graphs
+
+### To display the training performance graphs:
 
 python show_training_graphs.py
-This will show:
 
-Accuracy vs Epochs
-Loss vs Epochs
-🖥️ GUI Dent Detection
-Run the GUI application:
+### This will generate:
+
+- Accuracy vs Epochs
+- Loss vs Epochs
+
+### 🖥️ GUI Dent Detection
+
+### Run the GUI application:
 
 python dent_gui.py
-Upload a vehicle image and the model will predict whether the vehicle surface contains a dent.
 
-📌 Applications
-Vehicle damage inspection
-Insurance claim automation
-Smart vehicle maintenance systems
-Automated quality inspection
-🔮 Future Improvements
-Multi-class damage detection (scratches, cracks, dents)
-Real-time detection using webcam
-Deploy as a web application
-Improve model accuracy with larger datasets
-📜 License
-This project is for educational and research purposes.
+### Steps:
+
+- Launch the GUI
+
+- Upload a vehicle image
+
+- The model predicts whether the vehicle surface contains a dent or not
+
+### 📌 Applications
+
+- Vehicle damage inspection systems
+
+- Insurance claim automation
+
+- Smart vehicle maintenance systems
+
+- Automated quality inspection in manufacturing
+
+### 🔮 Future Improvements
+
+- Multi-class damage detection (scratches, cracks, dents)
+
+- Real-time detection using webcam
+
+- Deploy as a web application
+
+- Improve model accuracy using larger datasets
+
+### 📜 License
+
+This project is created for educational and research purposes.

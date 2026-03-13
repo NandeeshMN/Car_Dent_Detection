@@ -32,21 +32,21 @@ A **Convolutional Neural Network (CNN)** built with **TensorFlow and MobileNetV2
 ML_Project
 │
 ├── dataset/
-│   ├── train/                 # Training images
-│   └── test/                  # Testing images
+│   ├── train/                 
+│   └── test/                  
 │
 ├── models/
-│   ├── class_mapping.json     # Class labels mapping
-│   ├── dent_model_*.keras     # Trained CNN model
-│   └── training_history.pkl   # Saved training history
+│   ├── class_mapping.json     
+│   ├── dent_model_*.keras     
+│   └── training_history.pkl   
 │
-├── tf_env/                    # Python virtual environment
+├── tf_env/                    
 │
-├── train_model.py             # Script to train the model
-├── evaluate_model.py          # Script to evaluate the model
-├── show_training_graphs.py    # Visualize training accuracy and loss
-├── dent_gui.py                # GUI application for dent detection
-└── .gitignore                 # Files ignored by Git
+├── train_model.py             
+├── evaluate_model.py          
+├── show_training_graphs.py    
+├── dent_gui.py                
+└── .gitignore                 
 ```
 
 
@@ -55,7 +55,7 @@ ML_Project
 ## ⚙️ Installation
 
 ### Clone the Repository
-git clone https://github.com/yourusername/vehicle-dent-detection.git
+git clone https://github.com/yourusername/Car_Dent_Detection.git
 cd vehicle-dent-detection
 ### Install Dependencies
 pip install tensorflow opencv-python numpy matplotlib
@@ -133,7 +133,7 @@ python dent_gui.py
 - Deploy as a web application
 
 - Improve model accuracy using larger datasets
-
+---
 ### 📜 License
 
 This project is created for educational and research purposes.

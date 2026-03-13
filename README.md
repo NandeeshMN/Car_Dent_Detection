@@ -1,7 +1,6 @@
 # 🚗 Vehicle Dent Detection using Deep Learning
 
 This project detects **dents on vehicle surfaces** using **Deep Learning and Computer Vision**.
-
 A **Convolutional Neural Network (CNN)** built with **TensorFlow and MobileNetV2 Transfer Learning** is trained to classify vehicle images as **dented** or **non-dented**.
 
 ---
@@ -29,25 +28,26 @@ A **Convolutional Neural Network (CNN)** built with **TensorFlow and MobileNetV2
 
 ## 📂 Project Structure
 
-
-ML_PROJECT
+```text
+ML_Project
 │
 ├── dataset/
-│ ├── train/
-│ └── test/
+│   ├── train/                 # Training images
+│   └── test/                  # Testing images
 │
 ├── models/
-│ ├── class_mapping.json
-│ ├── dent_model_*.keras
-│ └── training_history.pkl
+│   ├── class_mapping.json     # Class labels mapping
+│   ├── dent_model_*.keras     # Trained CNN model
+│   └── training_history.pkl   # Saved training history
 │
-├── tf_env/ # Virtual environment
+├── tf_env/                    # Python virtual environment
 │
-├── train_model.py # Model training script
-├── evaluate_model.py # Model evaluation
-├── show_training_graphs.py # Visualization of training metrics
-├── dent_gui.py # GUI application for prediction
-└── .gitignore
+├── train_model.py             # Script to train the model
+├── evaluate_model.py          # Script to evaluate the model
+├── show_training_graphs.py    # Visualize training accuracy and loss
+├── dent_gui.py                # GUI application for dent detection
+└── .gitignore                 # Files ignored by Git
+```
 
 
 ---
@@ -60,6 +60,7 @@ cd vehicle-dent-detection
 ### Install Dependencies
 pip install tensorflow opencv-python numpy matplotlib
 
+---
 ### 🧠 Model Training
 
 ### Run the training script:
@@ -71,7 +72,7 @@ python train_model.py
 - Train the CNN model
 - Save the trained model inside the models/ folder
 - Store the training history for visualization
-
+---
 ### 📊 Model Evaluation
 
 ### To evaluate the trained model:
@@ -79,6 +80,8 @@ python train_model.py
 python evaluate_model.py
 
 This script evaluates the model performance on the test dataset.
+
+---
 
 ### 📈 Visualize Training Graphs
 
@@ -90,6 +93,8 @@ python show_training_graphs.py
 
 - Accuracy vs Epochs
 - Loss vs Epochs
+
+---
 
 ### 🖥️ GUI Dent Detection
 
@@ -105,6 +110,8 @@ python dent_gui.py
 
 - The model predicts whether the vehicle surface contains a dent or not
 
+---
+
 ### 📌 Applications
 
 - Vehicle damage inspection systems
@@ -114,6 +121,8 @@ python dent_gui.py
 - Smart vehicle maintenance systems
 
 - Automated quality inspection in manufacturing
+
+---
 
 ### 🔮 Future Improvements
 

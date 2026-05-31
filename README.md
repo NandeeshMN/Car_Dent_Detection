@@ -53,13 +53,6 @@ ML_Project
 ---
 
 ## ⚙️ Installation
-
-### Clone the Repository
-git clone https://github.com/NandeeshMN/Car_Dent_Detection.git
-cd vehicle-dent-detection
-### Install Dependencies
-pip install tensorflow opencv-python numpy matplotlib
-
 ---
 ### 🧠 Model Training
 

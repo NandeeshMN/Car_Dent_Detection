@@ -126,6 +126,8 @@ python dent_gui.py
 - Deploy as a web application
 
 - Improve model accuracy using larger datasets
+
+- Mobile App Development to predict the price amount for the repair
 ---
 ### 📜 License
 
